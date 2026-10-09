@@ -6,26 +6,27 @@
 <title>Wizards Window Cleaning | East Devon, Taunton &amp; Dorset</title>
 <meta name="description" content="Family-run window and gutter cleaning in East Devon, Taunton and Burton Bradstock. Interior and exterior, houses, flats and commercial. Call or text 07855 808 228 for a quote.">
 <style>
-:root{--ink:#26282c;--mute:#5f636a;--bg:#f6f5f2;--line:#dcdad4;--white:#fff;--accent:#e8541e;--accent-dark:#c8430f}
+:root{--ink:#1d2433;--blue:#1f4e8c;--blue-dark:#16355f;--blue-tint:#e8eff8;--mute:#5f636a;--bg:#f6f5f2;--line:#dcdad4;--white:#fff;--accent:#e8541e;--accent-dark:#c8430f}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 body{font:17px/1.6 system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg)}
 a{color:inherit}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 section{padding:64px 0}
-h1{font-size:clamp(32px,6vw,52px);line-height:1.1;letter-spacing:-.02em}
-h2{font-size:clamp(24px,4vw,32px);line-height:1.2;margin-bottom:10px}
+h1{color:var(--blue-dark);font-size:clamp(32px,6vw,52px);line-height:1.1;letter-spacing:-.02em}
+h2{color:var(--blue-dark);font-size:clamp(24px,4vw,32px);line-height:1.2;margin-bottom:10px}
 h3{font-size:18px;margin-bottom:4px}
 .lead{color:var(--mute);max-width:58ch;margin-bottom:28px}
 .btn{display:inline-block;padding:14px 24px;border-radius:8px;font-weight:700;text-decoration:none;border:2px solid var(--ink)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
 .btn.primary:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
-.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.ghost{border-color:var(--blue);color:var(--blue)}
+.btn.ghost:hover{background:var(--blue);color:#fff}
 .photo{width:100%;display:block;object-fit:cover;border-radius:10px}
 /* header */
-header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header{background:var(--white);border-bottom:3px solid var(--blue);position:sticky;top:0;z-index:5}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;max-width:1040px;margin:auto}
-.brand{font-weight:800;font-size:19px;text-decoration:none;letter-spacing:.02em}
+.brand{font-weight:800;font-size:19px;text-decoration:none;letter-spacing:.02em;color:var(--blue)}
 .brand span{color:var(--accent)}
 /* hero */
 .hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
@@ -33,17 +34,17 @@ header{background:var(--white);border-bottom:1px solid var(--line);position:stic
 .btns{display:flex;gap:12px;flex-wrap:wrap}
 .hero .photo{height:400px;object-position:40% 50%}
 .ticks{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:24px;list-style:none;padding:0;font-size:15px;font-weight:600}
-.ticks li:before{content:"✓ ";color:var(--accent)}
+.ticks li:before{content:"✓ ";color:var(--blue)}
 /* services */
 .white{background:var(--white)}
 .main{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
 .main .photo{height:230px;margin-bottom:14px}
 .main p,.more p{color:var(--mute);font-size:15px}
 .more{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.more div{border:1px solid var(--line);border-radius:10px;padding:16px;background:var(--bg)}
+.more div{border:1px solid #cfdcee;border-radius:10px;padding:16px;background:var(--blue-tint)}
 /* lets */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.steps div{border-left:4px solid var(--accent);padding:4px 0 4px 14px}
+.steps div{border-left:4px solid var(--blue);padding:4px 0 4px 14px}
 .steps p{color:var(--mute);font-size:15px}
 /* clients */
 .clients{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center}
@@ -53,9 +54,10 @@ header{background:var(--white);border-bottom:1px solid var(--line);position:stic
 .gallery .photo{height:260px}
 /* areas */
 .chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0}
-.chips li{border:1px solid var(--line);background:var(--bg);border-radius:99px;padding:8px 18px;font-weight:600}
+.chips li{border:1px solid #cfdcee;background:var(--blue-tint);color:var(--blue-dark);border-radius:99px;padding:8px 18px;font-weight:600}
 /* contact */
-.contact{background:var(--ink);color:#fff;text-align:center}
+.contact{background:var(--blue-dark);color:#fff;text-align:center}
+.contact h2{color:#fff}
 .contact .lead{color:#c9cbce;margin-left:auto;margin-right:auto}
 .contact .num{display:block;font-size:clamp(34px,7vw,56px);font-weight:800;color:var(--accent);text-decoration:none;margin:4px 0 22px}
 .contact .btns{justify-content:center}
@@ -70,8 +72,8 @@ footer{padding:24px 0 90px;font-size:14px;color:var(--mute);text-align:center}
   .hero .photo{height:240px;order:-1}
   .gallery .photo{height:220px}
   header .btn{padding:10px 16px;font-size:15px}
-  .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--white);border-top:1px solid var(--ink)}
-  .sticky a{flex:1;text-align:center;padding:16px;font-weight:700;text-decoration:none}
+  .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--white);border-top:2px solid var(--blue)}
+  .sticky a{flex:1;text-align:center;padding:16px;font-weight:700;text-decoration:none;color:var(--blue)}
   .sticky a+a{background:var(--accent);color:#fff}
 }
 </style>
