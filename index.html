@@ -75,6 +75,9 @@ header{background:var(--white);border-bottom:3px solid var(--charcoal);position:
 .ticks li:before{content:"✓ ";color:var(--accent)}
 /* services */
 .white{background:var(--white)}
+.vids{display:grid;grid-template-columns:repeat(2,minmax(0,300px));gap:16px;justify-content:center}
+.vids video{width:100%;aspect-ratio:9/16;max-height:520px;background:var(--charcoal);border-radius:10px;object-fit:cover}
+@media(max-width:520px){.vids{grid-template-columns:minmax(0,300px)}}
 .main{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
 .main .photo{height:230px;margin-bottom:14px}
 .main p,.more p{color:var(--mute);font-size:15px}
@@ -168,6 +171,17 @@ footer{padding:24px 0 90px;font-size:14px;color:var(--mute);text-align:center}
       <div><h3>Render cleaning</h3><p>Tired render brought back to life.</p></div>
       <div><h3>Fascias</h3><p>Cleaned to a bright finish.</p></div>
       <div><h3>Commercial</h3><p>Shops, offices, hotels and more.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>See us at work</h2>
+    <p class="lead">Interior and exterior glass, conservatories, balustrades and more. Frames and seals done every time.</p>
+    <div class="vids">
+      <video controls playsinline preload="none" poster="img/window-cleaning-2.jpg" aria-label="Wizards Window Cleaning cleaning a conservatory"><source src="img/window-cleaning-2.mp4" type="video/mp4"></video>
+      <video controls playsinline preload="none" poster="img/window-cleaning-1.jpg" aria-label="Cleaning the glass balustrade of a house"><source src="img/window-cleaning-1.mp4" type="video/mp4"></video>
     </div>
   </div>
 </section>
