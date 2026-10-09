@@ -48,9 +48,9 @@ header{background:var(--white);border-bottom:3px solid var(--blue);position:stic
 .steps p{color:var(--mute);font-size:15px}
 /* clients */
 .clients{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center}
-.clients a{text-decoration:none;color:var(--blue-dark)}
-.clients a:hover{text-decoration:underline}
-.clients div{border:1px solid var(--line);background:var(--white);border-radius:10px;padding:28px 12px;font-weight:700;font-size:18px}
+.clients a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:150px;border:1px solid var(--line);background:var(--white);border-radius:10px;padding:18px 12px;text-decoration:none;color:var(--blue-dark);font-weight:700;font-size:16px}
+.clients a:hover{border-color:var(--blue);box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.clients img{height:80px;width:auto;max-width:100%;object-fit:contain}
 /* gallery */
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .gallery .photo{height:260px}
@@ -148,7 +148,9 @@ footer{padding:24px 0 90px;font-size:14px;color:var(--mute);text-align:center}
     <h2>Trusted by</h2>
     <p class="lead">Local homes and businesses, and some well-known names.</p>
     <div class="clients">
-      <div><a href="https://goonveanfibres.com/" target="_blank" rel="noopener">Goonvean Fibres</a></div><div>River Cottage</div><div>Dower Hotel</div>
+      <a href="https://goonveanfibres.com/" target="_blank" rel="noopener"><img src="img/logos/goonvean.png" alt="Goonvean Fibres logo" loading="lazy">Goonvean Fibres</a>
+      <a href="https://rivercottage.net/" target="_blank" rel="noopener"><img src="img/logos/rivercottage.svg" alt="River Cottage logo" loading="lazy" style="height:auto;width:85%">River Cottage</a>
+      <a href="https://lymeregis-hotel.com/" target="_blank" rel="noopener"><img src="img/logos/dowerhouse.png" alt="The Dower House Hotel logo" loading="lazy">The Dower House Hotel</a>
     </div>
   </div>
 </section>
